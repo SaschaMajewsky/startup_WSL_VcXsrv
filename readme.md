@@ -17,7 +17,7 @@ establishing a connection to your server.
 
 **Info:** <br />
 -usage via execution of the startup_wsl_and_vcxsrv.py or the binary. <br />
--the binary needs to be in the root directory of the project
+-the binary needs to be in the root directory of the project <br />
 -all used libs are installed in the bundled venv <br />
--to access the venv under windows use venv\Scripts\activate
+-to access the venv under windows use venv\Scripts\activate <br />
 -used libs are listed in the requirements.txt
