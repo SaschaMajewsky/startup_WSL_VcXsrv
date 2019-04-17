@@ -23,21 +23,10 @@ time.sleep(0.8)
 pos = imagesearch("image_recognition\\bash.PNG")
 time.sleep(0.2)
 click_image("image_recognition\\bash.PNG", pos, "left", 0.2, offset=5)
-win32api.keybd_event(0x58, 0, )  # x
-win32api.keybd_event(0x46, 0, )  # f
-win32api.keybd_event(0x43, 0, )  # c
-win32api.keybd_event(0x45, 0, )  # e
-win32api.keybd_event(0x34, 0, )  # 4
-win32api.keybd_event(0xBD, 0, )  # -
-win32api.keybd_event(0x53, 0, )  # s
-win32api.keybd_event(0x45, 0, )  # e
-win32api.keybd_event(0x53, 0, )  # s
-time.sleep(0.1)
-win32api.keybd_event(0x53, 0, )  # s
-win32api.keybd_event(0x49, 0, )  # i
-win32api.keybd_event(0x4F, 0, )  # o
-win32api.keybd_event(0x4E, 0, )  # n
-win32api.keybd_event(0x0D, 0, )  # ENTER
+key_send_list = [0x58, 0x46, 0x43, 0x45, 0x34, 0xBD, 0x53, 0x45, 0x53, 0x53, 0x49, 0x4F, 0x4E, 0x0D]
+for key in key_send_list:
+    win32api.keybd_event(key, 0, )
+    time.sleep(0.05)
 
 # maximize the server window with the working GUI
 win32gui.ShowWindow(vcxsrv_window, win32con.SW_MAXIMIZE)
