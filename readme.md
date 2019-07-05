@@ -1,5 +1,5 @@
 A tiny tool that automates the tedious task of
-booting up the vcxsrv, going into your WSL and 
+booting up the vcxsrv, going into your WSL and
 establishing a connection to your server.
 
 **Demo:** <br />
@@ -16,7 +16,7 @@ establishing a connection to your server.
 -vcxsrv installed on your Windows 10 host machine <br />
 
 **Info:** <br />
--usage via execution of the startup_wsl_and_vcxsrv.py or the binary. <br />
+-usage via execution of the startup_wsl_and_vcxsrv.py or the binary <br />
 -the binary needs to be in the root directory of the project <br />
 -all used libs are installed in the bundled venv <br />
 -to access the venv under windows use venv\Scripts\activate <br />
